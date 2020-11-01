@@ -6,7 +6,7 @@
 .login {
   min-height: 100vh;
   padding: 0 20px;
-  background: black;
+  background-image: url("themebackground.jpg");
   display: flex;
 }
 
