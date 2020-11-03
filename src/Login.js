@@ -12,11 +12,11 @@ const Login = () => {
             <div className="loginContainer">
 
                 <label>Email</label>
-                <input type="text" autoFocus required value ={email}
+                <input type="text" autoFocus required value ={email} placeholder ="Email"
                 onChange={(e) => setEmail(e.target.value)}/>
 
                 <label>Password</label>
-                <input type="password" required valie={password}
+                <input type="password" required valie={password} placeholder ="Password"
                 onChange={(e) => setPassword(e.target.value)}/>
 
                 <div className="btnContainer">
