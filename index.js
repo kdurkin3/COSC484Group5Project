@@ -1,7 +1,8 @@
 
 
 var bannerStatus = 1;
-var bannerTimer = 800;     //this equiv to 4 sec in js
+var bannerTimer = 18000;     //this equiv to 18 sec in js.. stays for 35sec?
+// bannerTime value must be larger than times below
 
 
 window.onload = function() {
@@ -14,7 +15,7 @@ var startBannerLoop = setInterval (function() {
 }, bannerTimer);                                           //how many seconds until it loads other image
 
 
- 
+ //commented out because does not work
 /*
 //these two make it so when you hover mouse over banner it doesn't change
 document.getElementById("main-banner").onmouseenter = function() {                            //if do something inside browser then it needs to run functio inside of event handler
@@ -45,10 +46,10 @@ function bannerLoop() {
             document.getElementById("imgban2").style.zIndex = "1500";
             document.getElementById("imgban3").style.right = "1200px";
             document.getElementById("imgban3").style.zIndex = "500";
-        }, 500);
+        }, 10000);
         setTimeout(function() {
              document.getElementById("imgban2").style.opacity = "1";
-        }, 1000);
+        }, 13000);                                                               //prob fade out
         bannerStatus = 2;
     }
 
@@ -64,12 +65,13 @@ function bannerLoop() {
             document.getElementById("imgban3").style.zIndex = "1500";
             document.getElementById("imgban1").style.right = "1200px";
             document.getElementById("imgban1").style.zIndex = "500";
-        }, 500);
+        }, 0);
         setTimeout(function() {
              document.getElementById("imgban3").style.opacity = "1";
-        }, 1000);
+        }, 11200);
         bannerStatus = 3;
     }
+    
 
     else if (bannerStatus === 3) {
         document.getElementById("imgban1").style.opacity = "0";
@@ -82,12 +84,12 @@ function bannerLoop() {
             document.getElementById("imgban1").style.zIndex = "1500";
             document.getElementById("imgban2").style.right = "1200px";
             document.getElementById("imgban2").style.zIndex = "500";
-        }, 500);
+        }, 0);                                                                //was 500
         setTimeout(function() {
              document.getElementById("imgban1").style.opacity = "1";
-        }, 1000);
+        }, 30000);
         bannerStatus = 1;
     }
 }
 
-var banner_status=2;
+var banner_status = 1;

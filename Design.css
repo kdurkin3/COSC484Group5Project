@@ -166,9 +166,9 @@ ul{
     margin: 0 auto;  /*this centers the banner*/
     width: 1200px;  
     height: 400px;
-    background-color: blue;
+    background-color: #fff;
     overflow: hidden;    /*hides everythig outside of box*/
-    position: relative;  /**/
+    position: relative;  /*need precision absoloute*/
 }
 
 
@@ -179,6 +179,8 @@ ul{
     top: 0px;
     transition: all ease-in-out 500ms;
     -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
 }
 
 
@@ -207,4 +209,23 @@ ul{
     background-size: cover;
     background-position:center;
 
+}
+
+
+
+.bottom{
+    bottom:0px;
+    margin:10px;
+    color: #fff;
+    width: 100%;
+    text-align:center;
+
+}
+
+.bottomCent{
+    bottom:0px;
+    margin: 10px;
+    color:#fff;
+    width: 100%;
+    text-align: center;
 }
